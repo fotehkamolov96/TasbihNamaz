@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kamolov/Documents/GitHub/ts/app/src/main/res/drawable/bg_dialog.xml" value="0.3828125" />
+        <entry key="..\:/Users/Kamolov/Documents/GitHub/ts/app/src/main/res/drawable/bg_dialog_white.xml" value="0.3828125" />
         <entry key="..\:/Users/Kamolov/Documents/GitHub/ts/app/src/main/res/drawable/button_one.xml" value="0.3828125" />
         <entry key="..\:/Users/Kamolov/Documents/GitHub/ts/app/src/main/res/drawable/ic_baseline_photo_size_select_actual_24.xml" value="0.3828125" />
         <entry key="..\:/Users/Kamolov/Documents/GitHub/ts/app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.2552083333333333" />
