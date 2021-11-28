@@ -11,11 +11,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public TextView showDisplaytwo;
-    public TextView showDisplay;
-    public TextView showDisplaythree;
+    public TextView showDisplaytwo, showDisplay,showDisplaythree ;
     public int count = 0;
     public int counttwo = 0;
     public int countthree = 0;
@@ -35,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
         refreshsubh();
         refresallhamdullilah();
         refreshallahuakbar();
+
     }
+
+
+
 
     //Мы сохраняем в базе данных.
     @Override
