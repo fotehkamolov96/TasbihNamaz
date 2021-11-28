@@ -67,15 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
- /*       AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Are you sure you want to exit?")
-                .setCancelable(false)
-                .setPositiveButton("Yes", (dialog, id) -> MainActivity.this.finish())
-                .setNegativeButton("No", (dialog, id) -> dialog.cancel());
-        AlertDialog alert = builder.create();
-        alert.show();*/
-
-
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         View view = getLayoutInflater().inflate(R.layout.dialog_screen, null);
         Button cancel_ = view.findViewById(R.id.textViewNegative);
@@ -169,22 +160,42 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.refresh);
         imageView.setOnClickListener(v -> {
+
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setMessage("Шумо мутмаин ҳастед,ки мехоҳед бозоғоз?");
+            View view = getLayoutInflater().inflate(R.layout.dialog_screen, null);
+            Button cancel_ = view.findViewById(R.id.textViewNegative);
+            Button exit_ = view.findViewById(R.id.textViewPositive);
 
-            builder.setPositiveButton("Бале", (dialog, which) -> {
-                count = 0;
-                showDisplay.setText("0");
+            //Мы устанавливаем тексты по умалчанию.
+            TextView exit_title = view.findViewById(R.id.exit_title);
+            TextView exit_desc = view.findViewById(R.id.exit_desc);
+            exit_title.setText(R.string.exit_title);
+            exit_desc.setText(R.string.reset);
+
+            builder.setView(view);
+
+            final AlertDialog dialogExit = builder.create();
+            dialogExit.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            WindowManager.LayoutParams wmlpLogin = dialogExit.getWindow().getAttributes();
+            wmlpLogin.gravity = Gravity.CENTER;
+            dialogExit.show();
+            dialogExit.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+            cancel_.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialogExit.cancel();
+                }
             });
 
-            builder.setNegativeButton("Намехохам", (dialog, which) -> {
+            exit_.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    count = 0;
+                    showDisplay.setText("0");
+                    dialogExit.cancel();
+                }
             });
-
-            //creating alert dialog
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
-            alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.teal_700));
-            alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(getResources().getColor(R.color.teal_700));
 
         });
 
@@ -196,21 +207,40 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.refreshcardtwo);
         imageView.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setMessage("Шумо мутмаин ҳастед,ки мехоҳед бозоғоз?");
+            View view = getLayoutInflater().inflate(R.layout.dialog_screen, null);
+            Button cancel_ = view.findViewById(R.id.textViewNegative);
+            Button exit_ = view.findViewById(R.id.textViewPositive);
 
-            builder.setPositiveButton("Бале", (dialog, which) -> {
-                counttwo = 0;
-                showDisplaytwo.setText("0");
+            //Мы устанавливаем тексты по умалчанию.
+            TextView exit_title = view.findViewById(R.id.exit_title);
+            TextView exit_desc = view.findViewById(R.id.exit_desc);
+            exit_title.setText(R.string.exit_title);
+            exit_desc.setText(R.string.reset);
+
+            builder.setView(view);
+
+            final AlertDialog dialogExit = builder.create();
+            dialogExit.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            WindowManager.LayoutParams wmlpLogin = dialogExit.getWindow().getAttributes();
+            wmlpLogin.gravity = Gravity.CENTER;
+            dialogExit.show();
+            dialogExit.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+            cancel_.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialogExit.cancel();
+                }
             });
 
-            builder.setNegativeButton("Намехохам", (dialog, which) -> {
+            exit_.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    counttwo = 0;
+                    showDisplaytwo.setText("0");
+                    dialogExit.cancel();
+                }
             });
-
-            //creating alert dialog
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
-            alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.teal_700));
-            alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(getResources().getColor(R.color.teal_700));
 
         });
 
@@ -222,22 +252,40 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.refreshcardthree);
         imageView.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setMessage("Шумо мутмаин ҳастед,ки мехоҳед бозоғоз?");
+            View view = getLayoutInflater().inflate(R.layout.dialog_screen, null);
+            Button cancel_ = view.findViewById(R.id.textViewNegative);
+            Button exit_ = view.findViewById(R.id.textViewPositive);
 
-            builder.setPositiveButton("Бале", (dialog, which) -> {
-                countthree = 0;
-                showDisplaythree.setText("0");
+            //Мы устанавливаем тексты по умалчанию.
+            TextView exit_title = view.findViewById(R.id.exit_title);
+            TextView exit_desc = view.findViewById(R.id.exit_desc);
+            exit_title.setText(R.string.exit_title);
+            exit_desc.setText(R.string.reset);
+
+            builder.setView(view);
+
+            final AlertDialog dialogExit = builder.create();
+            dialogExit.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            WindowManager.LayoutParams wmlpLogin = dialogExit.getWindow().getAttributes();
+            wmlpLogin.gravity = Gravity.CENTER;
+            dialogExit.show();
+            dialogExit.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+            cancel_.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialogExit.cancel();
+                }
             });
 
-            builder.setNegativeButton("Намехохам", (dialog, which) -> {
+            exit_.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    countthree = 0;
+                    showDisplaythree.setText("0");
+                    dialogExit.cancel();
+                }
             });
-
-            //creating alert dialog
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
-            alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.teal_700));
-            alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(getResources().getColor(R.color.teal_700));
-
         });
 
     }

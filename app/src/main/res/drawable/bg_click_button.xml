@@ -3,6 +3,6 @@
 
     <item android:drawable="@color/highlight_ios_dialog"
         android:state_pressed="true"/>
-    <item android:drawable="@android:color/transparent"/>
+    <item android:drawable="@color/highlight_ios_dialog"/>
 
 </selector>

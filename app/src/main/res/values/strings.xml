@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">TasbihNamaz</string>
     <string name="exit_title">Омузиши Намоз</string>
-    <string name="exit_desc">Uygulamadan çıkış yapmak istediğine emin misin? Uygulamadan çıkış yapmak istediğine emin misin?</string>
+    <string name="exit_desc">The backups created with this functionality may contain some sensitive data.</string>
+    <string name="reset">Шумо мутмаин ҳастед,ки мехоҳед бозоғоз? The backups created with this functionality may contain some sensitive data.</string>
 </resources>
