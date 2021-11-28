@@ -70,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
                 .setNegativeButton("No", (dialog, id) -> dialog.cancel());
         AlertDialog alert = builder.create();
         alert.show();
+
+
+
+
+
     }
 
     public void LoadCounter() {
