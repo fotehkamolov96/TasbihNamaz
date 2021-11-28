@@ -26,5 +26,7 @@
     <color name="highlight_ios_dialog">#0F000000</color>
 
 
+    <color name="colorBlue">#2760F1</color>
+    <color name="backgroundapp">#343945</color>
 
 </resources>

@@ -6,15 +6,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public TextView showDisplaytwo, showDisplay,showDisplaythree ;
+    public TextView showDisplaytwo, showDisplay, showDisplaythree;
     public int count = 0;
     public int counttwo = 0;
     public int countthree = 0;
@@ -36,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
         refreshallahuakbar();
 
     }
-
-
 
 
     //Мы сохраняем в базе данных.
@@ -63,18 +67,35 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+ /*       AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Are you sure you want to exit?")
                 .setCancelable(false)
                 .setPositiveButton("Yes", (dialog, id) -> MainActivity.this.finish())
                 .setNegativeButton("No", (dialog, id) -> dialog.cancel());
         AlertDialog alert = builder.create();
-        alert.show();
+        alert.show();*/
 
 
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        View view = getLayoutInflater().inflate(R.layout.dialog_screen, null);
+        Button cancel_ = view.findViewById(R.id.textViewNegative);
+        Button exit_ = view.findViewById(R.id.textViewPositive);
 
+        TextView exit_title = view.findViewById(R.id.exit_title);
+        TextView exit_desc = view.findViewById(R.id.exit_desc);
 
+        exit_title.setText(R.string.exit_title);
+        exit_desc.setText(R.string.exit_desc);
 
+        builder.setView(view);
+        final AlertDialog dialogExit = builder.create();
+        dialogExit.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        WindowManager.LayoutParams wmlpLogin = dialogExit.getWindow().getAttributes();
+        wmlpLogin.gravity = Gravity.CENTER;
+        dialogExit.show();
+        dialogExit.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        cancel_.setOnClickListener(v -> dialogExit.cancel());
+        exit_.setOnClickListener(v -> MainActivity.this.finish());
     }
 
     public void LoadCounter() {

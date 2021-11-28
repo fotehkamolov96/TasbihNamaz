@@ -5,7 +5,6 @@
     android:id="@+id/layoutContent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_dialog_black"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -13,9 +12,9 @@
         android:layout_height="match_parent"
         android:clickable="true"
         android:gravity="center"
-        android:onClick="onOutsideClick"
         android:orientation="vertical"
-        android:paddingBottom="48dp">
+        android:paddingBottom="48dp"
+        android:focusable="true">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/layoutDialog"
@@ -41,14 +40,22 @@
                     android:orientation="vertical"
                     android:paddingTop="20dp">
 
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_photo_size_select_actual_24"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="8dp"/>
+
                     <TextView
-                        android:id="@+id/textViewTitle"
+                        android:id="@+id/exit_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:ellipsize="end"
                         android:fontFamily="sans-serif"
-                        android:gravity="center"
+                        android:gravity="start"
                         android:letterSpacing="@dimen/text_medium_letter_spacing"
                         android:lineSpacingExtra="@dimen/line_spacing_extra_title"
                         android:paddingLeft="20dp"
@@ -68,12 +75,12 @@
                         android:scrollbars="vertical">
 
                         <TextView
-                            android:id="@+id/textViewMessage"
+                            android:id="@+id/exit_desc"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ellipsize="end"
                             android:fontFamily="sans-serif-light"
-                            android:gravity="center"
+                            android:gravity="start"
                             android:letterSpacing="0.1"
                             android:lineSpacingExtra="2sp"
                             android:paddingLeft="20dp"
@@ -118,7 +125,7 @@
                                 android:layout_weight="1"
                                 android:orientation="horizontal">
 
-                                <TextView
+                                <Button
                                     android:id="@+id/textViewNegative"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -149,25 +156,27 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:padding="6dp"
                                 android:orientation="horizontal">
 
-                                <TextView
+                                <Button
                                     android:id="@+id/textViewPositive"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/bg_click_button"
+                                    android:background="@drawable/bg_card_button_yes"
                                     android:clickable="true"
                                     android:focusable="true"
                                     android:fontFamily="sans-serif-medium"
                                     android:gravity="center"
                                     android:letterSpacing="@dimen/text_medium_letter_spacing"
                                     android:maxLines="1"
+                                    android:stateListAnimator="@null"
                                     android:shadowColor="@color/text_shadow"
                                     android:shadowDx="1"
                                     android:shadowDy="1"
                                     android:shadowRadius="1"
                                     android:text="Yes"
-                                    android:textColor="@color/action_button_ios_dialog"
+                                    android:textColor="@color/white"
                                     android:textSize="15sp" />
                             </LinearLayout>
 

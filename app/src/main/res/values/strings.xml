@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TasbihNamaz</string>
+    <string name="exit_title">Омузиши Намоз</string>
+    <string name="exit_desc">Uygulamadan çıkış yapmak istediğine emin misin? Uygulamadan çıkış yapmak istediğine emin misin?</string>
 </resources>
