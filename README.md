@@ -22,6 +22,7 @@ You can see screenshots or a promo video of this project by going to the folder:
 
 "FullScreenDialog/assets/videoapp.mp4"
 ```
+![HomeScreen](https://github.com/fotehkamolov96/TasbihNamaz/blob/main/assets/image_two.png.png?raw=true)
 ![HomeScreen](https://github.com/fotehkamolov96/TasbihNamaz/blob/main/assets/image_one.png?raw=true)
 
 ## 👨🏻‍💻 Connect
