@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+       /* AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         View view = getLayoutInflater().inflate(R.layout.dialog_screen, null);
         Button cancel_ = view.findViewById(R.id.textViewNegative);
         Button exit_ = view.findViewById(R.id.textViewPositive);
@@ -86,7 +86,8 @@ public class MainActivity extends AppCompatActivity {
         dialogExit.show();
         dialogExit.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         cancel_.setOnClickListener(v -> dialogExit.cancel());
-        exit_.setOnClickListener(v -> MainActivity.this.finish());
+        exit_.setOnClickListener(v -> MainActivity.this.finish());*/
+        finish();
     }
 
     public void LoadCounter() {
@@ -169,6 +170,8 @@ public class MainActivity extends AppCompatActivity {
             //Мы устанавливаем тексты по умалчанию.
             TextView exit_title = view.findViewById(R.id.exit_title);
             TextView exit_desc = view.findViewById(R.id.exit_desc);
+            TextView refresh_desc = view.findViewById(R.id.refresh_desc);
+            refresh_desc.setText(R.string.reset_description);
             exit_title.setText(R.string.exit_title);
             exit_desc.setText(R.string.reset);
 
@@ -216,7 +219,8 @@ public class MainActivity extends AppCompatActivity {
             TextView exit_desc = view.findViewById(R.id.exit_desc);
             exit_title.setText(R.string.exit_title);
             exit_desc.setText(R.string.reset);
-
+            TextView refresh_desc = view.findViewById(R.id.refresh_desc);
+            refresh_desc.setText(R.string.reset_description);
             builder.setView(view);
 
             final AlertDialog dialogExit = builder.create();
@@ -261,7 +265,8 @@ public class MainActivity extends AppCompatActivity {
             TextView exit_desc = view.findViewById(R.id.exit_desc);
             exit_title.setText(R.string.exit_title);
             exit_desc.setText(R.string.reset);
-
+            TextView refresh_desc = view.findViewById(R.id.refresh_desc);
+            refresh_desc.setText(R.string.reset_description);
             builder.setView(view);
 
             final AlertDialog dialogExit = builder.create();
