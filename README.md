@@ -1,9 +1,9 @@
 # ✅ Tasbih — Zikr
 
-Tasbih is an android application with beautiful & attractive UI that can be used to counting i.e this work as counter and helpful for religious people.
+Tasbih is an android application with beautiful & attractive UI that can be used to counting i.e 
+this work as counter and helpful for religious people.
 
-With beautiful designs, you can open up new horizons every day by offering innovative and thoughtful 
-concepts through creative tools, one of which is the customizable **UI** dialog design.
+An easy, minimal and distraction free way of reciting **Tasbih** while you work and surf the internet.
 
 ---
 ## 📌 How to run on your Android phone?
