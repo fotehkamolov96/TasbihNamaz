@@ -1,7 +1,6 @@
-# ✅ FullScreenDialog
+# ✅ Tasbih — Zikr
 
-This project was implemented relying on the Android full-screen dialog in [Material Design](https://material.io/components/dialogs), 
-as described in the Material Design tutorial. It's a simple fullScreen Loader AlertDialog.
+Tasbih is an android application with beautiful & attractive UI that can be used to counting i.e this work as counter and helpful for religious people.
 
 With beautiful designs, you can open up new horizons every day by offering innovative and thoughtful 
 concepts through creative tools, one of which is the customizable **UI** dialog design.
