@@ -8,14 +8,16 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardviiew"
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginRight="19dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
         app:cardCornerRadius="6dp"
         app:cardElevation="2dp"
         app:cardUseCompatPadding="true">
@@ -79,6 +81,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Glory be to Allah"
+                        android:lines="1"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         android:textSize="18sp"
@@ -112,8 +115,7 @@
                             android:layout_gravity="center"
                             android:gravity="center_vertical"
                             android:src="@drawable/ic_baseline_refresh_24"
-                            android:textColor="@color/black"
-                            app:fontFamily="sans-serif-medium" />
+                            app:tint="@color/action_button_negative_ios_dialog" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -179,12 +181,15 @@
 
     </androidx.cardview.widget.CardView>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginRight="19dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
         app:cardCornerRadius="6dp"
         app:cardElevation="2dp"
         app:cardUseCompatPadding="true">
@@ -280,8 +285,7 @@
                             android:layout_gravity="center"
                             android:gravity="center_vertical"
                             android:src="@drawable/ic_baseline_refresh_24"
-                            android:textColor="@color/black"
-                            app:fontFamily="sans-serif-medium" />
+                            app:tint="@color/action_button_negative_ios_dialog" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -347,12 +351,15 @@
 
     </androidx.cardview.widget.CardView>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginRight="19dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
         app:cardCornerRadius="6dp"
         app:cardElevation="2dp"
         app:cardUseCompatPadding="true">
@@ -448,8 +455,7 @@
                             android:layout_gravity="center"
                             android:gravity="center_vertical"
                             android:src="@drawable/ic_baseline_refresh_24"
-                            android:textColor="@color/black"
-                            app:fontFamily="sans-serif-medium" />
+                            app:tint="@color/action_button_negative_ios_dialog"/>
                     </LinearLayout>
                 </LinearLayout>
 
