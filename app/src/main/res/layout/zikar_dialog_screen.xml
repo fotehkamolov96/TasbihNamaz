@@ -59,7 +59,7 @@
                         android:shadowDx="1"
                         android:shadowDy="1"
                         android:shadowRadius="1"
-                        android:textColor="@color/title_ios_dialog"
+                        android:textColor="#121212"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         tools:text="@string/exit_title" />
@@ -83,7 +83,7 @@
                         android:shadowDx="1"
                         android:shadowDy="1"
                         android:shadowRadius="1"
-                        android:textColor="@color/title_ios_dialog"
+                        android:textColor="#121212"
                         android:textSize="14sp"
                         tools:text="@string/reset" />
 
@@ -106,7 +106,7 @@
                         android:shadowDx="1"
                         android:shadowDy="1"
                         android:shadowRadius="1"
-                        android:textColor="@color/title_ios_dialog"
+                        android:textColor="#121212"
                         android:textSize="14sp"
                         tools:text="@string/reset_description" />
 
@@ -161,7 +161,7 @@
                                     android:shadowDy="1"
                                     android:shadowRadius="1"
                                     android:text="Не"
-                                    android:textColor="@color/action_button_ios_dialog"
+                                    android:textColor="#1981fb"
                                     android:textSize="15sp" />
 
                             </LinearLayout>
@@ -194,7 +194,7 @@
                                     android:shadowDy="1"
                                     android:shadowRadius="1"
                                     android:text="Хан"
-                                    android:textColor="@color/white"
+                                    android:textColor="#fff"
                                     android:textSize="15sp" />
                             </LinearLayout>
 

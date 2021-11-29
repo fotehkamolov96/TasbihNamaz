@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -17,7 +16,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public TextView showDisplaytwo, showDisplay, showDisplaythree;
@@ -42,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         refreshallahuakbar();
 
     }
-
 
     //Мы сохраняем в базе данных.
     @Override
@@ -103,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
         showDisplaythree.setText(counterthree);
     }
 
-
     //Мы обрабатываем данные методом onPause и сохраняем их в базе данных.
     @Override
     protected void onPause() {
@@ -163,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
         imageView.setOnClickListener(v -> {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            View view = getLayoutInflater().inflate(R.layout.dialog_screen, null);
+            View view = getLayoutInflater().inflate(R.layout.zikar_dialog_screen, null);
             Button cancel_ = view.findViewById(R.id.textViewNegative);
             Button exit_ = view.findViewById(R.id.textViewPositive);
 
@@ -210,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.refreshcardtwo);
         imageView.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            View view = getLayoutInflater().inflate(R.layout.dialog_screen, null);
+            View view = getLayoutInflater().inflate(R.layout.zikar_dialog_screen, null);
             Button cancel_ = view.findViewById(R.id.textViewNegative);
             Button exit_ = view.findViewById(R.id.textViewPositive);
 
@@ -256,7 +252,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.refreshcardthree);
         imageView.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            View view = getLayoutInflater().inflate(R.layout.dialog_screen, null);
+            View view = getLayoutInflater().inflate(R.layout.zikar_dialog_screen, null);
             Button cancel_ = view.findViewById(R.id.textViewNegative);
             Button exit_ = view.findViewById(R.id.textViewPositive);
 
